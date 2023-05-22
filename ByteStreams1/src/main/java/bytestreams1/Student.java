@@ -10,4 +10,15 @@ public class Student implements Serializable {
         this.id = id;
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", name=" + name + '}';
+    }
+    
+    
+
+    Student() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
