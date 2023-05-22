@@ -22,8 +22,8 @@ public class LAB5 {
             FileInputStream file = new FileInputStream("data.dat");
             ObjectInputStream input = new ObjectInputStream(file);
             Student s2 = (Student) input.readObject();
-            System.out.println(s2.id);
-            System.out.println(s2.name);
+            System.out.println(s2);
+         
         } catch (FileNotFoundException ex) {
             Logger.getLogger(LAB5.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
